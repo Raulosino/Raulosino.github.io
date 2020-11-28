@@ -32,6 +32,9 @@ main:before {
   height: 100%;
   z-index: -1;
 }
+#main-contact:before{
+    background: url(/images/background3.jpg) no-repeat center center/cover;
+}
 main h1 {
   font-size: 7rem;
   margin:1rem;
@@ -282,7 +285,7 @@ main a:hover{
   }
 
   .social-media{
-    margin-top: 5rem;
+    margin-top: 3rem;
   }
   .social-media p{
     display: none;
