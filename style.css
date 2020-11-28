@@ -63,7 +63,7 @@ main a:hover{
 }
 
 .links-container{
-  position: fixed;
+  position: relative;
   background: inherit;
   top: 0%;
   min-width: 100%;
@@ -283,13 +283,14 @@ main a:hover{
   .social-media{
     margin-top: 5rem;
   }
+  .social-media p{
+    display: none;
+  }
 
   .icons{ 
     font-size: 2rem;
   }
-  .social-media p{
-    display: none;
-  }
+  
 
 }
 
