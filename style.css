@@ -2,6 +2,7 @@
 *{
   margin: 0;
   padding: 0;
+  outline: none;
   box-sizing: border-box;
 }
 
@@ -13,7 +14,6 @@ body {
 .menu-interface{
   display: none;
 }
-
 
 
 main {
@@ -32,9 +32,7 @@ main:before {
   height: 100%;
   z-index: -1;
 }
-#main-contact:before{
-    background: url(/images/background3.jpg) no-repeat center center/cover;
-}
+
 main h1 {
   font-size: 7rem;
   margin:1rem;
@@ -55,7 +53,6 @@ main a:hover{
 .main-container {
   max-width: 100%;
   margin: auto;
-  overflow: hidden;
   padding: 0 3rem;
   display: flex;
   flex-direction: column;
@@ -66,13 +63,15 @@ main a:hover{
 }
 
 .links-container{
-  position: absolute;
+  position: fixed;
+  background: inherit;
   top: 0%;
   min-width: 100%;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
   padding: 1rem;
+  z-index: 2;
 }
 .links-container div{
   display: flex;
@@ -111,9 +110,6 @@ main a:hover{
 .icons div{
   margin: 0px 1rem 0px 2rem;
 }
-
-
-
 
 
 /* Phone media query */
@@ -268,11 +264,11 @@ main a:hover{
     display: none;
   }
 
-  h1{
-    font-size: 1rem;
+  main h1{
+    font-size: 5rem;
   }
 
-  p{
+  main p{
     margin-top: 1rem;
   }
 
@@ -285,12 +281,17 @@ main a:hover{
   }
 
   .social-media{
-    margin-top: 3rem;
+    margin-top: 5rem;
+  }
+
+  .icons{ 
+    font-size: 2rem;
   }
   .social-media p{
     display: none;
   }
 
 }
+
 
 

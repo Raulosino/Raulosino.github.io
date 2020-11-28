@@ -1,0 +1,52 @@
+
+
+#main-contact:before{
+    background: url(/images/background3.jpg) no-repeat center center/cover;
+}
+
+main h1{
+    font-size: 5rem;
+}
+
+form{
+    width: 100%;
+}
+
+.form-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width:100%
+}
+.form-container input{
+    margin: 0.5rem;
+    padding: 1rem;
+    font-size: 1rem;
+}
+.textarea{
+    max-width:100%;
+    width: 35rem;
+    resize: none;
+    margin: 0.5rem;
+    padding: 1rem;
+    display: flex;
+    font-size: 1rem;
+    max-height:50vh;
+    height: 30vh;
+}
+.button{
+    margin: 0.5rem;
+    padding: 0.5rem;
+}
+
+@media screen and (max-width:960px){
+    main h1{
+        font-size: 3rem;
+    }
+
+    .social-media{
+        margin-top: 2rem;
+    }
+}
+ 

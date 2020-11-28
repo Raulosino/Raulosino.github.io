@@ -7,11 +7,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-
-    <link rel="stylesheet" href="contact.style">
     <link rel="stylesheet" href="style.css">
-
-
+    <link rel="stylesheet" href="contact.css">
     <title>Contact</title>
 </head>
 
@@ -26,7 +23,7 @@
                 <div>
                     <div>
                         <ul>
-                            <li><a href="" target="_blank">Home</a></li>
+                            <li><a href="/index.html" target="_blank">Home</a></li>
                             <li><a href="" target="_blank">Portofolio</a></li>
                         </ul>
                     </div>
@@ -39,7 +36,7 @@
         <div class="main-container">
             <div class="links-container">
                 <div>
-                    <a href="" src="" target="_blank">Home</a>
+                    <a href="/index.html" src="" target="_blank">Home</a>
                 </div>
                 <img src="/images/logo.svg" class="logo">
                 <div>
@@ -47,7 +44,19 @@
                 </div>
             </div>
 
-            <form action="POST"></form>
+
+            <h1>Contact me!</h1>
+            <form method="POST" action="upload-contact" id="contact-form">
+                <div class="form-container">
+                    <input type="text" id="name" class="input" placeholder="Name" required>
+                    <input type="text" id="Email" class="input" placeholder="Email Address" required>
+                    <textarea placeholder="Message" id="message" class="textarea" required></textarea>
+                    <button type="submit" class="button">Submit</button>
+                </div>
+            </form>
+
+
+
 
             <div class="social-media">
                 <p>Find me in:</p>
