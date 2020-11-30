@@ -5,7 +5,7 @@
 }
 
 main h1{
-    font-size: 5rem;
+    font-size: 4rem;
 }
 
 form{
@@ -33,7 +33,7 @@ form{
 }
 .form-container input{
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     font-size: 1rem;
 }
 .textarea{
@@ -41,11 +41,11 @@ form{
     width: 35rem;
     resize: none;
     margin: 0.5rem;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     font-size: 1rem;
     max-height:50vh;
-    height: 30vh;
+    height: 25vh;
 }
 .button{
     margin: 0.5rem;
