@@ -34,12 +34,12 @@ main:before {
 }
 
 main h1 {
-  font-size: 5rem;
+  font-size: 4rem;
   margin:1rem;
 }
 
 main p{
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   
 }
 main a{
@@ -113,7 +113,7 @@ main a:hover{
 
 
 
-@media screen and (max-height:900px){
+@media screen and (max-height:700px){
     /* MENU BUTTON */
   .menu-interface {
     display: block;
@@ -264,7 +264,7 @@ main a:hover{
   }
 
   main h1{
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   main p{
@@ -275,7 +275,7 @@ main a:hover{
     display: block;
     min-width: 110px; 
     min-height:60px;
-    max-width: 20%;
+    max-width: 10rem;
     margin-top: 1rem;
   }
 
@@ -447,8 +447,8 @@ main a:hover{
     display: none;
   }
 
-  main h1{
-    font-size: 5rem;
+ main h1{
+    font-size: 4rem;
   }
 
   main p{
