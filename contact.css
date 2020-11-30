@@ -13,7 +13,15 @@ form{
 }
 
 .main-container{
-    height: auto;
+    max-width: 100%;
+    margin: auto;
+    padding: 0 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
 }
 
 .form-container{
