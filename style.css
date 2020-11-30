@@ -63,7 +63,7 @@ main a:hover{
 }
 
 .links-container{
-  position: absolute;
+  position: fixed;
   background: inherit;
   top: 0%;
   min-width: 100%;
@@ -73,6 +73,7 @@ main a:hover{
   padding: 1rem;
   z-index: 2;
 }
+
 .links-container div{
   display: flex;
   justify-content: center;
