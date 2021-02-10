@@ -10182,11 +10182,8 @@ h3 {
   border: 1px solid var(--yellow);
   font-size: 1.3rem;
   padding-top:0.5rem;
-  opacity:80%;
 }
-.portfolio-item:hover {
-  opacity:100%
-}
+
 
 
 .portfolio .portfolio-item .portfolio-item-caption {
