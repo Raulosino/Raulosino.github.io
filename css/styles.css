@@ -560,21 +560,26 @@ pre code {
   .container-sm, .container {
     max-width: 540px;
   }
+
+  
 }
 @media (min-width: 768px) {
   .container-md, .container-sm, .container {
     max-width: 720px;
   }
+  
 }
 @media (min-width: 992px) {
   .container-lg, .container-md, .container-sm, .container {
     max-width: 960px;
   }
+  
 }
 @media (min-width: 1200px) {
   .container-xl, .container-lg, .container-md, .container-sm, .container {
     max-width: 1100px;
   }
+  
 }
 .row {
   display: flex;
@@ -814,6 +819,9 @@ pre code {
 }
 
 @media (min-width: 576px) {
+
+  
+
   .col-sm {
     flex-basis: 0;
     flex-grow: 1;
@@ -1031,6 +1039,7 @@ pre code {
     max-width: 100%;
   }
 
+  
   .row-cols-md-1 > * {
     flex: 0 0 100%;
     max-width: 100%;
@@ -1241,6 +1250,8 @@ pre code {
     flex-grow: 1;
     max-width: 100%;
   }
+
+  
 
   .row-cols-lg-1 > * {
     flex: 0 0 100%;
@@ -1924,6 +1935,8 @@ pre code {
   .table-responsive-sm > .table-bordered {
     border: 0;
   }
+
+  
 }
 @media (max-width: 767.98px) {
   .table-responsive-md {
@@ -1935,6 +1948,8 @@ pre code {
   .table-responsive-md > .table-bordered {
     border: 0;
   }
+
+  
 }
 @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -1946,6 +1961,7 @@ pre code {
   .table-responsive-lg > .table-bordered {
     border: 0;
   }
+   
 }
 @media (max-width: 1199.98px) {
   .table-responsive-xl {
@@ -1957,6 +1973,7 @@ pre code {
   .table-responsive-xl > .table-bordered {
     border: 0;
   }
+  
 }
 .table-responsive {
   display: block;
@@ -3018,6 +3035,7 @@ input[type=button].btn-block {
     left: 0;
   }
 
+ 
   .dropdown-menu-xl-right {
     right: 0;
     left: auto;
@@ -4104,11 +4122,14 @@ input[type=button].btn-block {
     padding-left: 0;
   }
 }
+
+
 @media (min-width: 992px) {
   .navbar-expand-lg {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
+  
   .navbar-expand-lg .navbar-nav {
     flex-direction: row;
   }
@@ -4145,12 +4166,14 @@ input[type=button].btn-block {
     padding-right: 0;
     padding-left: 0;
   }
+  
 }
 @media (min-width: 1200px) {
   .navbar-expand-xl {
     flex-flow: row nowrap;
     justify-content: flex-start;
   }
+   
   .navbar-expand-xl .navbar-nav {
     flex-direction: row;
   }
@@ -10291,4 +10314,10 @@ form .row:first-child .floating-label-form-group {
 
 .button-div{
   display:flex;
+}
+
+.alvaro-img{
+  border: 1px solid black;
+  padding: 0.5rem;
+  background-color: white;
 }
