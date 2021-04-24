@@ -4,22 +4,20 @@ $(function () {
     ).jqBootstrapValidation({
         preventSubmit: true,
         submitError: function ($form, event, errors) {
-            // additional error messages or events
         },
         submitSuccess: function ($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            // get values from FORM
+            event.preventDefault(); 
+      
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
             var message = $("textarea#message").val();
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
+            var firstName = name;
             if (firstName.indexOf(" ") >= 0) {
                 firstName = name.split(" ").slice(0, -1).join(" ");
             }
             $this = $("#sendMessageButton");
-            $this.prop("disabled", true); // Disable submit button until AJAX call is complete to prevent duplicate messages
+            $this.prop("disabled", true);
             $.ajax({
                 url: "/assets/mail/contact_me.php",
                 type: "POST",
@@ -66,7 +64,7 @@ $(function () {
                 },
                 complete: function () {
                     setTimeout(function () {
-                        $this.prop("disabled", false); // Re-enable submit button when AJAX call is complete
+                        $this.prop("disabled", false); // Re-enable submit button 
                     }, 1000);
                 },
             });
