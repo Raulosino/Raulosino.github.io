@@ -58,11 +58,10 @@
             <div class="row">
                 <div class="col-lg-8 mx-auto form-style">
                     <!-- To configure the contact form email address, go to mail/contact_me.php and update the email address in the PHP file on line 19.-->
-                    <form id="contactForm" action="https://formsubmit.co/info@truckmastercr.com" name="sentMessage"
-                        novalidate="novalidate">
+                    <form id="contactForm" action="https://formsubmit.co/info@truckmastercr.com" method="POST"
+                        name="sentMessage" novalidate="novalidate">
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Nombre:</label>
                                 <input class="form-control" id="name" name="name" type="text" placeholder="Nombre:"
                                     required="required"
                                     data-validation-required-message="Por favor, escriba su nombre." />
@@ -71,7 +70,6 @@
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Correo electrónico:</label>
                                 <input class="form-control" id="email" name="email" type="email"
                                     placeholder="Correo electrónico: " required="required"
                                     data-validation-required-message="Por favor, introduzca su dirección de correo electrónico." />
@@ -80,7 +78,6 @@
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Número telefónico:</label>
                                 <input class="form-control" id="phone" name="telefono" type="tel"
                                     placeholder="Número telefónico:" required="required"
                                     data-validation-required-message="Por favor, introduzca su número de teléfono." />
@@ -89,7 +86,6 @@
                         </div>
                         <div class="control-group">
                             <div class="form-group floating-label-form-group controls mb-0 pb-2">
-                                <label>Mensaje:</label>
                                 <textarea class="form-control" id="message" name="message" rows="5"
                                     placeholder="Mensaje" data-validation-required-message=""></textarea>
                                 <p class=" Ingrese un mensaje."></p>
@@ -108,9 +104,9 @@
         <div class="container mt-4 mb-4">
             <div class="row ">
                 <!-- Footer Location-->
-                <div class="col-lg-4 mb-5 mb-lg-0">
-                    <h4 class="text-uppercase mb-4">Número telefónico:</h4>
-                    <a class="lead mb-0" href="tel:+506-8464-6851">+506 8464 6851</a>
+                <div class="col-lg-4 mb-5 mb-lg-0 pb-3">
+                    <h4 class="text-uppercase pb-4 mt-1">Número telefónico:</h4>
+                    <a class="lead" href="tel:+506-8464-6851">+506 8464 6851</a>
                 </div>
                 <!-- Footer Social Icons-->
                 <div class="col-lg-4 mb-5 mb-lg-0">
