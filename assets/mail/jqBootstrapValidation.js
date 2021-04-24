@@ -1,12 +1,3 @@
-/* jqBootstrapValidation
- * A plugin for automating validation on Twitter Bootstrap formatted forms.
- *
- * v1.3.6
- *
- * License: MIT <http://opensource.org/licenses/mit-license.php> - see LICENSE file
- *
- * http://ReactiveRaven.github.com/jqBootstrapValidation/
- */
 
 (function ($) {
 
@@ -97,8 +88,6 @@
           //                                     SNIFF HTML FOR VALIDATORS
           // =============================================================
 
-          // *snort sniff snuffle*
-
           if (settings.options.sniffHtml) {
             var message = "";
             // ---------------------------------------------------------
@@ -172,7 +161,8 @@
             //                                                    NUMBER
             // ---------------------------------------------------------
             if ($this.attr("type") !== undefined && $this.attr("type").toLowerCase() === "number") {
-              message = settings.builtInValidators.number.message;
+              //message = settings.builtInValidators.number.message;
+              message = "Por favor ingrese un número de teléfono.<!-- data-validator-validemail-message to override -->"
               if ($this.data("validationNumberMessage")) {
                 message = $this.data("validationNumberMessage");
               }
@@ -810,7 +800,7 @@
         name: "Number",
         type: "regex",
         regex: "([+-]?\\\d+(\\\.\\\d*)?([eE][+-]?[0-9]+)?)?",
-        message: "Must be a number<!-- data-validator-number-message to override -->"
+        message: "Por favor, ingrese un número de teléfono.<!-- data-validator-number-message to override -->"
       },
       integer: {
         name: "Integer",
