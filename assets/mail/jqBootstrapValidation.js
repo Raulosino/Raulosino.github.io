@@ -288,7 +288,9 @@
             var foundValidator = false;
             message =
               (
-                "<!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
+                message
+                  ? message
+                  : "'" + el + "<!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
               )
               ;
 
