@@ -15,16 +15,15 @@
   var defaults = {
     options: {
       prependExistingHelpBlock: false,
-      sniffHtml: true, // sniff for 'required', 'maxlength', etc
-      preventSubmit: true, // stop the form submit event from firing if validation fails
-      submitError: false, // function called if there is an error when trying to submit
-      submitSuccess: false, // function called just before a successful submit event is sent to the server
-      semanticallyStrict: false, // set to true to tidy up generated HTML output
+      sniffHtml: true,
+      preventSubmit: true,
+      submitError: false,
+      submitSuccess: false,
+      semanticallyStrict: false,
       autoAdd: {
         helpBlocks: true
       },
       filter: function () {
-        // return $(this).is(":visible"); // only validate elements you can see
         return true; // validate everything
       }
     },
@@ -470,18 +469,18 @@
 
               errorsFound = $.unique(errorsFound.sort());
 
-              // Were there any errors?
+              // Find errors
               if (errorsFound.length) {
                 // Better flag it up as a warning.
                 $controlGroup.removeClass("success error").addClass("warning");
 
-                // How many errors did we find?
+                // Find errors
                 if (settings.options.semanticallyStrict && errorsFound.length === 1) {
-                  // Only one? Being strict? Just output it.
+                  // Only one
                   $helpBlock.html(errorsFound[0] +
                     (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 } else {
-                  // Multiple? Being sloppy? Glue them together into an UL.
+                  // Multiple
                   $helpBlock.html("<ul role=\"alert\"><li>" + errorsFound.join("</li><li>") + "</li></ul>" +
                     (settings.options.prependExistingHelpBlock ? $helpBlock.data("original-contents") : ""));
                 }
@@ -858,7 +857,7 @@
   };
 
   var getValue = function ($this) {
-    // Extract the value we're talking about
+    // Extract the value we need
     var value = $this.val();
     var type = $this.attr("type");
     if (type === "checkbox") {
