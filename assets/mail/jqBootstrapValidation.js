@@ -290,7 +290,7 @@
               (
                 message
                   ? message
-                  : "'" + el + "' validation failed <!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
+                  : "'" + el + "<!-- Add attribute 'data-validation-" + el.toLowerCase() + "-message' to input to change this message -->"
               )
               ;
 
